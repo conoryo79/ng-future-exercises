@@ -1,19 +1,11 @@
-<form [formGroup] ="form">
+<form [formGroup] ="habitoForm">
     <h3>Crear hábito</h3>
     <p>nombre</p>
     <input type="text" form ControlName="habito"/>
     <button (click) ="onSubmit()">Crear</button>
     <p>tus hábitos</p>
 
-    @if (habitos().length > 0) {
-        @for (habito of habitos(); track habito) {
-            <li class="habit-wrapper"></li>
-        }
-    } @else {
-        <div>            
-            <p>No hay hábitos creados</p>
-        </div>
-    }
+   
 
     @if(message !==''){
         <p>{{message}}</p>

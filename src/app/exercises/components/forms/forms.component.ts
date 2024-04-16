@@ -1,5 +1,5 @@
-import { HttpClient } from '@angular/common/http'
-import { Component, input } from '@angular/core'
+//import { HttpClient } from '@angular/common/http'
+import { Component } from '@angular/core'
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms'
 
 @Component({
@@ -27,6 +27,6 @@ export class FormsComponent {
       return
     }
     this.message = ''
-    this.habitos.push(this.habitoForm.value.habito ?? '')
+    // this.habitos.push(this.habitoForm.value.habito ?? '')
   }
 }
